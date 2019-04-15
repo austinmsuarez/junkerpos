@@ -3,7 +3,6 @@
 ## About
 Junker PoS is a point of sale system that was created to learn about utilizing Flask and Azure services.
 It is also an experiment in scalability, I want to learn what it takes to scale architect a solution. 
-
 <br/><br/>
 I am going to first start scaling from the needs of one store to a much larger organization.
 
