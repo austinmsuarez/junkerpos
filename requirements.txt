@@ -1,4 +1,4 @@
- flask==0.9
+ flask== 0.12.3 
  flask-mail==0.7.6
  sqlalchemy==0.7.9
  flask-sqlalchemy==0.16
