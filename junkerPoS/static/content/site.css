@@ -13,10 +13,15 @@ body {
 .username_label {
     display: inline;
 }
+.username_input {
+    margin-left: 20px;
+}
 .password_label {
     display: inline;
 }
-
+.password_input {
+    margin-left: 26px;
+}
 /* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
