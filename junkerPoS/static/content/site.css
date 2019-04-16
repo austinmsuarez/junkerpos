@@ -1,26 +1,46 @@
 body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: black;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-top: 20px;
+    padding-top: 100px;
     padding-left: 15px;
     padding-right: 15px;
 }
-
+.login {
+    margin-top: 10px;
+    min-width: 350px;
+    font-size: 20px;
+    border: none;
+    background-color: #F06400;
+    color: white;
+}
+.user_block {
+    padding-left: 30%;
+    position: fixed;
+}
 .username_label {
-    display: inline;
+    display: inline-block;
+    color: white;
 }
 .username_input {
     margin-left: 20px;
 }
 .password_label {
-    display: inline;
+    display: inline-block;
+    color: white;
 }
 .password_input {
     margin-left: 26px;
+}
+
+.footer {
+    bottom: 20px;
+    position: fixed;
+    width: -webkit-fill-available;
 }
 /* Set width on the form input elements since they're 100% wide by default */
 input,
