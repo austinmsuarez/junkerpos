@@ -1,4 +1,4 @@
-# Junker PoS (Point of Sale)
+# Junker PoS (Point of Sale) System
 
 ## About
 Junker PoS is a point of sale system that was created to learn about utilizing Flask and Azure services.
