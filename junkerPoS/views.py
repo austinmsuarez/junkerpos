@@ -1,6 +1,8 @@
 from datetime import datetime
-from flask import render_template
+from flask import render_template, request, session, abort
 from junkerPoS import app
+
+import pydocumentdb.document_client as document_client
 
 @app.route('/')
 @app.route('/home')
@@ -9,6 +11,22 @@ def home():
     return render_template(
         'index.html',
         year=datetime.now().year,
+    )
+
+@app.route('/login', methods=["POST"])
+def login():
+    print("hello")
+
+    username = request.form["username"]
+    password = request.form["password"]
+    print("username " + username)
+    print("password " + password)
+
+
+    return render_template(
+        'index.html',
+        year=datetime.now().year,
+        result = "valid",
     )
 
 @app.route('/contact')
