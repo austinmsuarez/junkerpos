@@ -1,0 +1,60 @@
+.all_content{
+    margin-top:50px;
+    display:inline-flex;
+}
+
+.menu {
+    width: 100px;
+    left: 0px;
+    position: absolute;
+}
+
+.main_menu input{
+    border:             none;
+    background-color:   dimgrey;
+    color:              white;
+    margin-bottom:      10px;
+    height:             75px;
+    width:              100px;
+    text-align:         center;
+}
+
+.customer_cart {
+    margin-left: 110px;
+    width: 800px;
+    height: 500px;
+}
+
+.uni_search {
+    width: 800px;
+    margin-bottom: 10px;
+}
+
+
+.cart {
+    width: 800px;
+    height: 500px;
+    background-color: lightgray;
+}
+.cart td{
+    color: white;
+    background-color: grey;
+    padding: 10px;
+    border: lightgray 1px solid;
+}
+
+.sub_menu{
+    right:0px;
+    margin-right: 50px;
+    position:absolute;
+}
+
+.sub_menu input {
+    border: none;
+    background-color: dimgrey;
+    color: white;
+    margin-bottom: 10px;
+    height: 75px;
+    width: 100px;
+    text-align: center;
+}

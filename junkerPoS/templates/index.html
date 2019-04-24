@@ -2,21 +2,22 @@
 
 {% block content %}
  <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
-    <div class="sign_in">
-        <div class="user_block">
-            <form action="/login" method="post">
-                <div class="sign_in_block">
-                    <h2 class="username_label">Username:</h2>
-                    <input class="username_input" name="username" type="text" />
-                </div>
-                <div class="sign_in_block">
-                    <h2 class="password_label">Password:</h2>
-                    <input class="password_input" name="password" type="password" />
-                </div>
-                <input class="login" type="submit" value="Sign In" />
-                <p>{{ result }}</p>
-            </form>
-        </div>
-    </div>
-
-{% endblock %}
+     <div class="container body-content">
+         <div class="sign_in">
+             <div class="user_block">
+                 <form action="/login" method="post">
+                     <div class="sign_in_block">
+                         <h2 class="username_label">Username:</h2>
+                         <input class="username_input" name="username" type="text" />
+                     </div>
+                     <div class="sign_in_block">
+                         <h2 class="password_label">Password:</h2>
+                         <input class="password_input" name="password" type="password" />
+                     </div>
+                     <input class="login" type="submit" value="Sign In" />
+                     <p>{{ result }}</p>
+                 </form>
+             </div>
+         </div>
+     </div>
+     {% endblock %}

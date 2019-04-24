@@ -20,18 +20,10 @@
                 </button>
                 <h1 class="navbar-brand">Junker PoS</h1>
             </div>
-            <!--<div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="{{ url_for('home') }}">Home</a></li>
-                    <li><a href="{{ url_for('about') }}">About</a></li>
-                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
-                </ul>
-
-            </div>-->
         </div>
     </div>
 
-    <div class="container body-content">
+    
         {% block content %}{% endblock %}
         <div class="footer">
             <hr />
@@ -39,7 +31,7 @@
                 <p>&copy; {{ year }} - Junker PoS</p>
             </footer>
         </div>
-    </div>
+    
 
     <script src="/static/scripts/jquery-1.10.2.js"></script>
     <script src="/static/scripts/bootstrap.js"></script>

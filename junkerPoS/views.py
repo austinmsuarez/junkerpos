@@ -24,7 +24,7 @@ def login():
 
 
     return render_template(
-        'index.html',
+        'home.html',
         year=datetime.now().year,
         result = "valid",
     )
