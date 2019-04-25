@@ -19,8 +19,7 @@ body {
     color: white;
 }
 .user_block {
-    padding-left: 50%;
-    position: fixed;
+    padding-left: 40%;
 }
 .username_label {
     display: inline-block;

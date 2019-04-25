@@ -1,6 +1,7 @@
-.all_content{
-    margin-top:50px;
-    display:inline-flex;
+.all_content {
+    margin-top: 50px;
+    display: inline-flex;
+    width: -webkit-fill-available;
 }
 
 .menu {
@@ -21,22 +22,23 @@
 
 .customer_cart {
     margin-left: 110px;
-    width: 800px;
+    margin-right: 270px;
+    width: -webkit-fill-available;
     height: 500px;
 }
 
 .uni_search {
-    width: 800px;
+    width: -webkit-fill-available;
     margin-bottom: 10px;
 }
 
 
 .cart {
-    width: 800px;
+    width: -webkit-fill-available;
     height: 500px;
     background-color: lightgray;
 }
-.cart td{
+.cart th{
     color: white;
     background-color: grey;
     padding: 10px;
@@ -45,7 +47,7 @@
 
 .sub_menu{
     right:0px;
-    margin-right: 50px;
+    margin-right: 20px;
     position:absolute;
 }
 
