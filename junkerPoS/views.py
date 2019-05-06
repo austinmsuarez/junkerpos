@@ -1,13 +1,8 @@
 from datetime import datetime
 from flask import render_template, request, session, abort
+import db_manager
 from junkerPoS import app
-import config_cosmos
-import azure.cosmos.documents as documents
-import azure.cosmos.cosmos_client as cosmos_client
-import azure.cosmos.errors as errors
 
-
-import pydocumentdb.document_client as document_client
 
 @app.route('/')
 @app.route('/home')
@@ -20,13 +15,10 @@ def home():
 
 @app.route('/login', methods=["POST"])
 def login():
-    print("hello")
-
     username = request.form["username"]
     password = request.form["password"]
-    print("username " + username)
-    print("password " + password)
 
+    db_manager.validate_user(username,password)
 
     return render_template(
         'home.html',
