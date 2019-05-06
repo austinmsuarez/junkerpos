@@ -7,14 +7,15 @@ It is also an experiment in scalability, I want to learn what it takes to scale 
 I am going to first start scaling from the needs of one store to a much larger organization.
 
 ### Requirements
- flask== 0.12.3 <br/>
- flask-mail==0.7.6 <br/>
- SQLAlchemy>=1.3.0 <br/>
- flask-sqlalchemy==0.16 <br/>
- sqlalchemy-migrate==0.7.2 <br/>
- flask-whooshalchemy==0.55a <br/>
- flask-wtf==0.8.4 <br/>
- pytz==2013b <br/>
- flask-babel==0.8 <br/>
- flup <br/>
- pydocumentdb>=1.0.0 <br/>
+ flask== 0.12.3 
+ flask-mail==0.7.6
+ SQLAlchemy>=1.3.0
+ flask-sqlalchemy==0.16
+ sqlalchemy-migrate==0.7.2
+ flask-whooshalchemy==0.55a
+ flask-wtf==0.8.4
+ pytz==2013b
+ flask-babel==0.8
+ flup
+ pydocumentdb>=1.0.0
+ azure-cosmos==3.0.2
