@@ -18,10 +18,15 @@ def login():
     username = request.form["username"]
     password = request.form["password"]
 
-    db_manager.validate_user(username,password)
-
-    return render_template(
-        'home.html',
-        year=datetime.now().year,
-        result = "valid",
-    )
+    if db_manager.validate_user(username,password):
+        return render_template(
+            'home.html',
+            year=datetime.now().year,
+            result = "valid",
+        )
+    else:
+        return render_template(
+            'index.html',
+            year=datetime.now().year,
+            result = "Invalid username or password",
+        )

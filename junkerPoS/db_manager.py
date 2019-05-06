@@ -47,9 +47,9 @@ def validate_user(username, password):
 
         d = client.ReadDocument(docs_link)
         if check_password_hash(d['password'], password):
-            print("valid")
-        print(d)
-        print("hello")
+            return True
+        
+        return False
     except:
         pass
 
