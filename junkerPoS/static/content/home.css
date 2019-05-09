@@ -20,7 +20,7 @@
     text-align:         center;
 }
 
-.cart {
+.center {
     margin-left: 110px;
     margin-right: 270px;
     width: -webkit-fill-available;
@@ -32,8 +32,15 @@
     margin-bottom: 10px;
 }
 
-
-.cart-headers tr{
+.cart_container {
+    background-color: grey;
+    width: 100%;
+    height: -webkit-fill-available;
+}
+.cart{
+    width: 100%;
+}
+.cart tr{
     color: white;
     background-color: grey;
     border: lightgray 1px solid;

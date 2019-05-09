@@ -1,7 +1,10 @@
+@import "site_elem.css";
+
 body {
     padding-top: 50px;
     padding-bottom: 20px;
-    background-color: black;
+    background-color: var(--neutralQuaternaryAlt);
+    overflow:hidden;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -15,31 +18,65 @@ body {
     min-width: 350px;
     font-size: 20px;
     border: none;
-    background-color: #F06400;
+    border-radius: 5px;
+    background-color: var(--themePrimary);
     color: white;
 }
 .user_block {
-    padding-left: 40%;
+    -webkit-box-shadow: 0px 0px 99px -47px rgba(0,0,0,0.39);
+    -moz-box-shadow: 0px 0px 99px -47px rgba(0,0,0,0.39);
+    box-shadow: 0px 0px 99px -47px rgba(0,0,0,0.39);
+    background-color: var(--neutralLight);
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 600px;
+    padding: 10%;
+    border-radius: 10px;
+}
+.welcome_message {
+    margin-left: 30%;
+    color: var(--themeTertiary);
+}
+
+.form_block{
+    margin-left:10px;
 }
 .username_label {
     display: inline-block;
-    color: white;
+    color: var(--themeTertiary);
 }
 .username_input {
-    margin-left: 20px;
+    margin-left: 15px;
+    border-radius: 5px;
+    padding-left: 1px;
 }
+
 .password_label {
     display: inline-block;
-    color: white;
+    color: var(--themeTertiary);
 }
 .password_input {
-    margin-left: 26px;
+    margin-left: 21px;
+    border-radius: 5px;
+    padding-left: 1px;
+}
+
+.password_input:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    -moz-box-shadow: 0px 0px 99px -47px rgba(0,0,0,0.39);
+    box-shadow: 0px 0px 99px -47px rgba(0,0,0,0.39);
+    border: 1px solid var(--focusable);
 }
 
 .footer {
-    bottom: 20px;
-    position: fixed;
-    width: -webkit-fill-available;
+    padding-top: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: 100px;
+}
+.error {
+    color: darkred;
 }
 /* Set width on the form input elements since they're 100% wide by default */
 input,

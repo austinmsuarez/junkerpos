@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="junkerPoS\static\content\home.css" />
+    <Content Include="junkerPoS\static\content\site_elem.css" />
     <Content Include="junkerPoS\templates\home.html" />
     <Content Include="requirements.txt" />
     <Content Include="junkerPoS\static\content\bootstrap.css" />
