@@ -17,18 +17,18 @@ def home():
 def login():
     username = request.form["username"]
     password = request.form["password"]
-    if db_manager.validate_user(username,password):
-        return render_template(
-            'home.html',
-            year=datetime.now().year,
-            result = "valid",
-        )
-    else:
-        return render_template(
-            'index.html',
-            year=datetime.now().year,
-            result = "Invalid username or password",
-        )
+    #if db_manager.validate_user(username,password):
+    return render_template(
+        'home.html',
+        year=datetime.now().year,
+        result = "valid",
+    )
+    #else:
+    #    return render_template(
+    #        'index.html',
+    #        year=datetime.now().year,
+    #        result = "Invalid username or password",
+    #    )
 
 @app.route('/get_product', methods=["GET"])
 def get_product():

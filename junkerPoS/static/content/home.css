@@ -5,13 +5,14 @@
 }
 
 .menu {
+    margin-left: 5px;
     width: 100px;
     left: 0px;
     position: absolute;
 }
 
 .main_menu input{
-    border:             none;
+    border-radius:      5px;
     background-color:   dimgrey;
     color:              white;
     margin-bottom:      10px;
@@ -30,12 +31,44 @@
 .uni_search {
     width: -webkit-fill-available;
     margin-bottom: 10px;
+    border-radius: 5px;
+    padding-left: 5px;
+    
+}
+
+.customer_block_home {
+    background-color: grey;
+    color: white;
+    margin-top: 5px;
+    width: 25%;
+    height: 25%;
+    margin-right: 0px;
+    display: inline-block;
+}
+.totals {
+    background-color: grey;
+    color: white;
+    margin-top: 5px;
+    width: 300px;
+    height: 150px;
+    display: inline;
+    position: fixed;
+    right: 0;
+    margin-right: 270px;
+}
+.customer_button {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 25pt;
 }
 
 .cart_container {
     background-color: grey;
     width: 100%;
-    height: -webkit-fill-available;
+    height: 75%;
 }
 .cart{
     width: 100%;
@@ -48,18 +81,19 @@
     height: 5px;
 }
 
-.sub_menu{
-    right:0px;
-    margin-right: 20px;
-    position:absolute;
+.sub_menu {
+    right: 0px;
+    margin-left: 25px;
+    margin-right: 25px;
+    position: absolute;
 }
 
-.sub_menu input {
-    border: none;
-    background-color: dimgrey;
-    color: white;
-    margin-bottom: 10px;
-    height: 75px;
-    width: 100px;
-    text-align: center;
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tab input{
+    background-color: var()
 }

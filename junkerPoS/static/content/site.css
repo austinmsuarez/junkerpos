@@ -61,13 +61,6 @@ body {
     padding-left: 1px;
 }
 
-.password_input:focus {
-  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-    -moz-box-shadow: 0px 0px 99px -47px rgba(0,0,0,0.39);
-    box-shadow: 0px 0px 99px -47px rgba(0,0,0,0.39);
-    border: 1px solid var(--focusable);
-}
-
 .footer {
     padding-top: 100px;
     padding-left: 15px;
