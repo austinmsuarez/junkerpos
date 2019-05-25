@@ -34,12 +34,39 @@
     </div>
 
     <div class="sub_menu">
-        <div class="tabs">
-            <input type="button" value="Sales"/>
-            <input type="button" value="Manager"/>
-            <input type="button" value="Advanced" />
+        <div class="tab">
+            <input class="sub_menuLink" type="button" value="Sales" onclick="sub_menuSelect(event,'sales')"></input>
+            <input class="sub_menuLink" type="button" value="Manager" onclick="sub_menuSelect(event,'manager')"></input>
+            <input class="sub_menuLink" type="button" value="Advanced" onclick="sub_menuSelect(event,'advanced')"></input>
+        </div>
+
+        <div id="sales" class="tabcontent" onclick="">
+            <h1>h</h1>
+        </div>
+        <div id="manager" class="tabcontent">
+            <h1>b</h1>
+        </div>
+        <div id="advanced" class="tabcontent">
+            <h1>c</h1>
         </div>
     </div>
 
 </div>
+
+<script>
+    function sub_menuSelect(evt, menuOption){
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("sub_menuLink");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(menuOption).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+</script>
 {% endblock %}

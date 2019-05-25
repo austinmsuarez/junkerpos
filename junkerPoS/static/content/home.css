@@ -1,3 +1,5 @@
+@import "site_elem.css";
+
 .all_content {
     margin-top: 50px;
     display: inline-flex;
@@ -13,6 +15,8 @@
 
 .main_menu input{
     border-radius:      5px;
+    border:             1px;
+    border-color:       dimgrey;
     background-color:   dimgrey;
     color:              white;
     margin-bottom:      10px;
@@ -32,6 +36,7 @@
     width: -webkit-fill-available;
     margin-bottom: 10px;
     border-radius: 5px;
+    border-color: white;
     padding-left: 5px;
     
 }
@@ -84,16 +89,30 @@
 .sub_menu {
     right: 0px;
     margin-left: 25px;
-    margin-right: 25px;
+    margin-right: 12px;
     position: absolute;
 }
 
-.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+  /* Style the buttons that are used to open the tab content */
+.sub_menuLink {
+    background-color: var(--themePrimary);
+    border-color: var(--themePrimary);
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 10px;
+    height: 72px;
+    width: 78px;
+    text-align: center;
+} 
+  
+/* Create an active/current tablink class */
+.tab input.active {
+  background-color: var(--themeDarkAlt);
+  border:none;
 }
-
-.tab input{
-    background-color: var()
+  
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
 }

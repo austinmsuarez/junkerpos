@@ -2,7 +2,7 @@
 The flask application package.
 """
 import logging
-import config_cosmos
+#import config_cosmos
 import azure.cosmos.documents as documents
 import azure.cosmos.cosmos_client as cosmos_client
 import azure.cosmos.errors as errors
